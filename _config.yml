@@ -1,4 +1,13 @@
 title: "Wanjin Blog"
 description: "My GitHub Pages"
 url: "https://wanjinchoi.github.io"
-baseurl: ""
+baseurl: ""          # 꼭 빈 값
+theme: minima        # 기본 Jekyll 테마
+show_excerpts: true
+
+author: "Wanjin Choi"
+github_username: wanjinchoi
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
