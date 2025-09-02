@@ -13,7 +13,7 @@ repository: "wanjinchoi/wanjinchoi.github.io"
 
 # ---- Theme ----
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "default"   # "air", "aqua", "contrast", "dark", "dirt", "mint", "neon", "plum", "sunrise"
+minimal_mistakes_skin: "air"   # "air", "aqua", "contrast", "dark", "dirt", "mint", "neon", "plum", "sunrise"
 
 # ---- Plugins (GitHub Pages 허용 범위) ----
 plugins:
