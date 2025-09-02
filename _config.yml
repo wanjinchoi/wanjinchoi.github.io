@@ -11,3 +11,5 @@ github_username: wanjinchoi
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+header_pages:
+- about.md
