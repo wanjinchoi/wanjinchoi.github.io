@@ -31,7 +31,7 @@ highlighter: rouge
 future: false
 
 # ---- UI Options ----
-logo: "/assets/img/avatar.png"   # 없으면 주석 처리
+logo: "/assets/img/wanjin.jpg"   # 없으면 주석 처리
 search: true                     # 상단 검색
 breadcrumbs: true
 breadcrumbs_home_label: "Home"
