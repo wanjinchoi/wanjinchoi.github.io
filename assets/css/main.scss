@@ -1,34 +1,75 @@
----
----
-
-@import "minimal-mistakes/skins/default";
-@import "minimal-mistakes";
-
-/* 링크/버튼 하이라이트 컬러 */
-:root {
-  --mm-accent-color: #0ea5e9; /* 원래 스킨 위에 덮어씀 */
+/* ===== Dark masthead: 상단 바도 어둡게 ===== */
+.masthead,
+.greedy-nav {
+  background: #0b0f14 !important;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.greedy-nav .site-title,
+.greedy-nav a,
+.greedy-nav .search__toggle {
+  color: #cfd6dd !important;
+}
+.greedy-nav a:hover,
+.greedy-nav a:focus {
+  color: var(--mm-accent-color) !important;
+}
+/* 크럼브/상단 여백도 어둡게 */
+.breadcrumbs {
+  background: transparent;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
 }
 
-a, .btn--primary { color: var(--mm-accent-color); }
-.btn--primary { border-color: var(--mm-accent-color); }
-
-body, .page__content {
-  font-family: "Pretendard", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
-}
-
-h1,h2,h3 { letter-spacing: .2px; }
-
-@media (prefers-color-scheme: dark) {
-  body { background: #0b0f14; color: #dbe1e8; }
-  a { color: #7cc7ff; }
-  .page__title { color: #e6edf3; }
-}
-
-/* 본문 최대 폭 */
+/* ===== Dark body 톤 정리(너무 칙칙하지 않게) ===== */
+body { background: #0e141b; color: #dde3ea; }
+.page__title { color: #e8edf2; }
 .page { max-width: 1080px; }
 
-/* 코드블록 가독성 */
-.highlight { font-size: .95rem; line-height: 1.55; }
+/* 사이드바 다크 톤 */
+.sidebar {
+  background: transparent;
+  border-right: 0;
+}
+.author__content, .author__urls { color:#b7c0cb; }
+.author__urls a { color:#cfd6dd; }
 
-/* 리스트 간격 */
-.page__content ul li { margin: .2rem 0; }
+/* ===== 카드(그리드) - 간결/플랫 스타일 ===== */
+/* 그리드 간격 */
+.entries-grid { gap: 22px !important; }
+
+/* 카드 박스 */
+.archive__item {
+  background: #11161d;                  /* 어두운 카드 배경 */
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 14px;
+  box-shadow: none;                      /* 화려한 그림자 제거 */
+  overflow: hidden;
+}
+
+/* 썸네일 */
+.archive__item-teaser { margin: 0; }
+.archive__item-teaser img {
+  display:block; width:100%; height:160px; object-fit:cover;
+}
+
+/* 카드 본문 패딩 */
+.archive__item-body { padding: 14px 16px 16px; }
+
+/* 타이틀/요약 톤 */
+.archive__item-title { margin: 2px 0 6px; font-weight: 700; }
+.archive__item-title a { color: #d8e7f5; }
+.archive__item-title a:hover { color: var(--mm-accent-color); }
+.archive__item-excerpt { color:#9aa4b2; }
+
+/* 메타(읽는 시간 등) 살짝 옅게 */
+.page__meta, .page__meta a { color:#7f8a97; }
+
+/* 호버 효과는 미니멀하게 */
+.archive__item:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: rgba(255,255,255,.12);
+}
+
+/* 포스트 본문 가독성 */
+.page__content { line-height: 1.75; }
+.page__content h2 { margin-top: 1.4rem; }
