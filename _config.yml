@@ -22,6 +22,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
 
+google_analytics: G-XXXXXXX
 # ---- Build / Output ----
 paginate: 7
 paginate_path: "/page:num/"
