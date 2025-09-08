@@ -32,7 +32,7 @@ paginate_path: "/page:num/"
 permalink: /:categories/:title/
 markdown: kramdown
 highlighter: rouge
-future: false
+future: ture
 
 # ---- UI Options ----
 logo: "/assets/img/wanjin.jpg"   # 실제 파일 없으면 주석 처리
