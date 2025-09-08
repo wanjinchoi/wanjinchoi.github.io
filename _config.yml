@@ -21,6 +21,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-include-cache      # ★ 이 줄 추가
 
 
 google_analytics: G-XXXXXXX
