@@ -85,3 +85,7 @@ comments:
     category_id: "<복사값>"      # 위와 동일
     mapping: "pathname"
     reactions_enabled: "1"
+
+category_archive:
+  type: liquid
+  path: /categories/

@@ -1,4 +1,34 @@
---- 
---- 
-@import "minimal-mistakes/skins/default"; 
-@import "minimal-mistakes"; 
+---
+---
+
+@import "minimal-mistakes/skins/default";
+@import "minimal-mistakes";
+
+/* 링크/버튼 하이라이트 컬러 */
+:root {
+  --mm-accent-color: #0ea5e9; /* 원래 스킨 위에 덮어씀 */
+}
+
+a, .btn--primary { color: var(--mm-accent-color); }
+.btn--primary { border-color: var(--mm-accent-color); }
+
+body, .page__content {
+  font-family: "Pretendard", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+}
+
+h1,h2,h3 { letter-spacing: .2px; }
+
+@media (prefers-color-scheme: dark) {
+  body { background: #0b0f14; color: #dbe1e8; }
+  a { color: #7cc7ff; }
+  .page__title { color: #e6edf3; }
+}
+
+/* 본문 최대 폭 */
+.page { max-width: 1080px; }
+
+/* 코드블록 가독성 */
+.highlight { font-size: .95rem; line-height: 1.55; }
+
+/* 리스트 간격 */
+.page__content ul li { margin: .2rem 0; }
