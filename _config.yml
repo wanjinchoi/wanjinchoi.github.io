@@ -68,7 +68,7 @@ author:
       url: "https://github.com/wanjinchoi"
     - label: "Email"
       icon: "fas fa-envelope"
-      url: "mailto:you@example.com"
+     url: "mailto:ghkswlszzz@gmail.com"
 
 # ---- Nav (상단 메뉴 파일을 쓰도록) ----
 #  _data/navigation.yml 사용
@@ -83,3 +83,14 @@ author:
 # ---- Feeds / SEO ----
 atom_feed:
   hide: false
+  
+  
+comments:
+  provider: "giscus"
+  giscus:
+    repo: "wanjinchoi/wanjinchoi.github.io"
+    repo_id: "<복사값>"
+    category: "Comments"
+    category_id: "<복사값>"
+    mapping: "pathname"
+    reactions_enabled: "1"
