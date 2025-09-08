@@ -21,10 +21,11 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
-  - jekyll-include-cache      # ★ 이 줄 추가
+  - jekyll-include-cache
 
+# ---- Analytics ----
+google_analytics: "G-XXXXXXX"   # 실제 GA4 측정 ID로 교체
 
-google_analytics: G-XXXXXXX
 # ---- Build / Output ----
 paginate: 7
 paginate_path: "/page:num/"
@@ -34,8 +35,8 @@ highlighter: rouge
 future: false
 
 # ---- UI Options ----
-logo: "/assets/img/wanjin.jpg"   # 없으면 주석 처리
-search: true                     # 상단 검색
+logo: "/assets/img/wanjin.jpg"   # 실제 파일 없으면 주석 처리
+search: true
 breadcrumbs: true
 breadcrumbs_home_label: "Home"
 show_date: true
@@ -59,7 +60,7 @@ defaults:
 # ---- Author (사이드바 프로필) ----
 author:
   name: "Wanjin Choi"
-  avatar: "/assets/img/wanjin.jpg"  # 이미지 없으면 주석
+  avatar: "/assets/img/wanjin.jpg"  # 실제 파일 없으면 주석
   bio: "RPA/Automation, AWS, IoT/Modbus 실험 기록."
   location: "Seoul, KR"
   links:
@@ -68,29 +69,19 @@ author:
       url: "https://github.com/wanjinchoi"
     - label: "Email"
       icon: "fas fa-envelope"
-     url: "mailto:ghkswlszzz@gmail.com"
-
-# ---- Nav (상단 메뉴 파일을 쓰도록) ----
-#  _data/navigation.yml 사용
-# header_pages 대신 navigation.yml을 권장
-
-# ---- Collections (필요하면 추가) ----
-# collections:
-#   projects:
-#     output: true
-#     permalink: /projects/:path/
+      url: "mailto:ghkswlszzz@gmail.com"
 
 # ---- Feeds / SEO ----
 atom_feed:
   hide: false
-  
-  
+
+# ---- Comments (giscus) ----
 comments:
   provider: "giscus"
   giscus:
     repo: "wanjinchoi/wanjinchoi.github.io"
-    repo_id: "<복사값>"
+    repo_id: "<복사값>"          # giscus.app에서 발급된 실제 값으로 교체
     category: "Comments"
-    category_id: "<복사값>"
+    category_id: "<복사값>"      # 위와 동일
     mapping: "pathname"
     reactions_enabled: "1"
