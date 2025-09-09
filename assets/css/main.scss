@@ -70,6 +70,8 @@ body { background: #0e141b; color: #dde3ea; }
   border-color: rgba(255,255,255,.12);
 }
 
-/* 포스트 본문 가독성 */
-.page__content { line-height: 1.75; }
-.page__content h2 { margin-top: 1.4rem; }
+/* 섹션형 홈 가독성 */
+.page { max-width: 1240px; }
+.page__content h2 { margin-top: 1.8rem; }
+.page__content li { margin: .3rem 0; }
+
